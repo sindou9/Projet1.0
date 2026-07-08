@@ -6,7 +6,7 @@ from streamlit_gsheets import GSheetsConnection
 st.set_page_config(page_title="Formulaire de Saisie Dynamique", layout="wide")
 
 # Lien de votre Google Sheets (Lien transmis dans votre message)
-FICHIER_EXCEL = "https://docs.google.com/spreadsheets/d/1Go4fyX6NFsnOjsiZzz9lF_wvHSVJ7IqrxMk2RVbwJek/edit?usp=sharing
+FICHIER_EXCEL = "https://docs.google.com/spreadsheets/d/1Go4fyX6NFsnOjsiZzz9lF_wvHSVJ7IqrxMk2RVbwJek/edit?usp=sharing"
 
 COLONNES = [
     "Client", "Statut Client", "Incident Declaré", "Agence", 
