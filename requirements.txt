@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+os
+re
+time
