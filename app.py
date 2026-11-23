@@ -5,11 +5,11 @@ import time
 from openpyxl.utils import get_column_letter
 
 # Configuration
-FICHIER_EXCEL = "data_bases.xlsx"
+FICHIER_EXCEL = "base_de_donnees.xlsx"
 
-COLONNES = ["Client", "Statut Client", "Incident Déclaré", "Agence", 
+COLONNES = ["Client", "Statut Client", "Incident Declaré", "Agence", 
             "Intervenant", "Date Declaration Incident", "Date Debut Intervention", "Heure Debut Intervention", 
-            "Date Fin Intervention", "Heure Fin Intervention", "Etat Incident", "Durée en Jours", "Durée de Remise en Etat",
+            "Date Fin Intervention", "Heure Fin Intervention", "Etat Incident", "Durée en Jours", "Durée De Remise en Etat",
             "Commentaire"]
 
 # Fonction pour charger ou initialiser le fichier Excel
@@ -156,17 +156,17 @@ with st.form("formulaire_saisie", clear_on_submit=True):
             nouvelle_saisie = pd.DataFrame({
                 "Client": [client],
                 "Statut Client": [statut_client],
-                "Incident Déclaré": [incident_declare],
+                "Incident Declaré": [incident_declare],
                 "Agence": [agence],
                 "Intervenant": [intervenant],
-                "Date de Déclaration de l'Incident": [date_declaration_incident_str],
-                "Date de Début de l'Intervention": [date_debut_intervention_str],
-                "Heure de Début de l'Intervention": [heure_debut_intervention_str],
-                "Date de Fin de l'Intervention": [date_fin_intervention_str],
-                "Heure de Fin de l'Intervention": [heure_fin_intervention_str],
-                "État de l'Incident": [etat_incident],
+                "Date Declaration Incident": [date_declaration_incident_str],
+                "Date Debut Intervention": [date_debut_intervention_str],
+                "Heure Debut Intervention": [heure_debut_intervention_str],
+                "Date Fin Intervention": [date_fin_intervention_str],
+                "Heure Fin Intervention": [heure_fin_intervention_str],
+                "Etat Incident": [etat_incident],
                 "Durée en Jours": [duree_en_jours],
-                "Durée de Remise en État (minutes)": [duree_de_remise_en_etat],
+                "Durée De Remise en Etat": [duree_de_remise_en_etat],
                 "Commentaire": [commentaire]
             })
             
